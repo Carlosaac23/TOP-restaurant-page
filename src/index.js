@@ -1,6 +1,6 @@
-import home from './home';
-import about from './about';
-import contact from './contact';
+import home from './pages/home';
+import about from './pages/about';
+import contact from './pages/contact';
 import './style.css';
 
 home();
