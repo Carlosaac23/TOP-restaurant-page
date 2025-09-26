@@ -3,6 +3,11 @@ import spaghetti from './spaghetti.jpg';
 export default function home() {
   const container = document.getElementById('container');
 
+  // Delete previous HTML
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+
   const image = document.createElement('img');
   const title = document.createElement('h1');
   const text = document.createElement('p');
