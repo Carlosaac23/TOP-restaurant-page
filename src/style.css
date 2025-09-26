@@ -1,0 +1,141 @@
+:root {
+  --bg-color: #fafafa;
+  --font-color: #1f1f1f;
+  --default-font-size: 16px;
+  --title-font-size: 2.2rem;
+  --text-font-size: 1.1rem;
+  --text-color: #414141;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('./fonts/Inter_18pt-Regular.ttf');
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: var(--default-font-size);
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+/* Home */
+.header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.header__nav {
+  display: flex;
+  gap: 10px;
+}
+
+.header__nav button {
+  font-family: inherit;
+  font-weight: 600;
+  background-color: white;
+  border: 1px solid var(--font-color);
+  border-radius: 6px;
+  padding: 6px 20px;
+}
+
+.header__nav button:hover {
+  background-color: var(--font-color);
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+.home__img {
+  border-radius: 6px;
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 500px;
+  height: auto;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.home__title {
+  font-size: var(--title-font-size);
+  text-align: center;
+}
+
+.home__text {
+  margin: 0 100px;
+  font-size: var(--text-font-size);
+  color: var(--text-color);
+}
+
+/* About */
+.about__img {
+  border-radius: 6px;
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 500px;
+  height: auto;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.about__title {
+  font-size: var(--title-font-size);
+  text-align: center;
+}
+
+.about__text {
+  margin: 0 100px;
+  font-size: var(--text-font-size);
+  color: var(--text-color);
+}
+
+/* Contact */
+.contact__title {
+  text-align: center;
+  font-size: var(--title-font-size);
+}
+
+.contact__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  padding: 30px;
+  width: 400px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.form label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form label::after {
+  content: '*';
+  color: red;
+}
+
+.form input {
+  margin-bottom: 20px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  border-radius: 6px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+}
+
+.form textarea {
+  resize: none;
+}
