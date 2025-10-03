@@ -1,4 +1,4 @@
-import restaurant from '@/images/restaurant.png';
+import restaurant from '@/images/restaurant.webp';
 
 export default function about() {
   const container = document.getElementById('container');

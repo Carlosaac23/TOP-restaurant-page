@@ -1,4 +1,4 @@
-import spaghetti from '@/images/spaghetti.jpg';
+import spaghetti from '@/images/spaghetti.webp';
 
 export default function home() {
   const container = document.getElementById('container');
